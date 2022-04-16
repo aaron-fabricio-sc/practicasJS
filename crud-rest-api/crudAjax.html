@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Crud Rest API ajax</title>
+  </head>
+  <body>
+    <h1>Crud rest api ajax</h1>
+    <section id="crud">
+      <article>
+        <h2 class="crud-title">Agregar santo</h2>
+        <form action="" class="crud-form">
+          <input type="text" placeholder="nombre" name="nombre" required />
+          <br />
+          <input
+            type="text"
+            placeholder="constelacion"
+            name="constelacion"
+            required
+          />
+          <br />
+          <input type="submit" value="Agregar" />
+          <input type="hidden" name="id" />
+        </form>
+      </article>
+      <br />
+      <article>
+        <h2>Ver santos</h2>
+        <table class="crud-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Constelacion</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="body"></tbody>
+        </table>
+      </article>
+    </section>
+
+    <template id="crud-template">
+      <tr>
+        <td class="name"></td>
+        <td class="constellation"></td>
+        <td class="actions">
+          <button class="edit">editar</button>
+          <button class="delete">eliminar</button>
+        </td>
+      </tr>
+    </template>
+    <script src="js/ajax.js"></script>
+  </body>
+</html>

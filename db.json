@@ -1,0 +1,31 @@
+{
+  "santos": [
+    {
+      "id": 1,
+      "nombre": "seiya",
+      "constelacion": "pegaso"
+    },
+    {
+      "id": 3,
+      "nombre": "shiriu",
+      "constelacion": "dragon"
+    },
+    {
+      "nombre": "camus",
+      "constelacion": "acuario",
+      "id": 4
+    }
+  ],
+  "dioses": [
+    {
+      "id": 1,
+      "nombre": "atenea",
+      "de": "tierra"
+    },
+    {
+      "id": 2,
+      "nombre": "ades",
+      "de": "infierno"
+    }
+  ]
+}
